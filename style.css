@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    border: 1px solid salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.outer-circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid salmon;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid salmon;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(22, 177, 224);
+}
+
+#clock {
+    position: absolute;
+    color: azure;
+}
+
+.card:hover {
+    background-color: rgb(22, 177, 224);
+    transition: all 1s ease;
+
+    .outer-circle {
+        background-color: rgb(22, 177, 224);
+        border-color: azure;
+        transition: all 1s ease;
+    }
+
+    .inner-circle {
+        border-color: azure;
+        background-color: azure;
+        transition: all 1s ease;
+    }
+
+    #clock {
+        color: rgb(22, 177, 224);
+        transition: all 1s ease;
+    }
+}
